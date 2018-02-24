@@ -2,6 +2,10 @@ variable "region" {
   default = "us-west-2"
   }
 
+variable "iamrole" {
+  default = "StanfordUpdateDNS"
+}
+
 variable "asg_prefix" {
   default = "ASGoradb"
 }
