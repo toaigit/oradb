@@ -12,17 +12,17 @@ Create an EC2 instance with the following characteristics:
     - Startup the database if already installed  
 
 Basic flows:  
-    - if this is the first time,   
+  - if this is the first time,   
     - initialize the ebs /db and /backup filesystems  
     - mount the /db and /backup   
     - Manually run db creation (run.dbca SID)  
     - Backup the spfileSID.ora  
     - Setup oradb service  
     - Restart the database using oradb service.  
-      - If this is not a first time,   
-        - Just mount the /db and /backup  
-        - Restore the spfileSID.ora to ORACLE_HOME/dbs  
-        - Restore /etc/oratab, listener.ora and sqlnet.ora  
-        - Setup oradb service  
-        - Startup the database using the oradb service  
+  - If this is not a first time,   
+    - Just mount the /db and /backup  
+    - Restore the spfileSID.ora to ORACLE_HOME/dbs  
+    - Restore /etc/oratab, listener.ora and sqlnet.ora  
+    - Setup oradb service  
+    - Startup the database using the oradb service  
 
